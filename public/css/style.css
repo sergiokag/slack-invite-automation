@@ -7,7 +7,6 @@ html,body{
 margin:0;
 padding:0;
 font-family: 'Open Sans', sans-serif;
-background: #fff url(../images/bg.jpg) center top no-repeat;
 background-size: cover;
 height: 100%;
 width: 100%;
@@ -15,15 +14,17 @@ width: 100%;
 
 
 #wrapper{
-max-width: 100%;
-width: 940px;
+width: 100%;
 margin: 0 auto;
 }
 
 .main{
-max-width: 100%;
-width: 940px;
+width: 100%;
 float: left;
+background: url(../images/vue_logo.png) no-repeat center 50px;
+background-size: 150px;
+padding: 0 15px;
+box-sizing: border-box;
 }
 
 .header, .content, .bottom, .sep2{
@@ -34,7 +35,7 @@ float: left;
 
 
 .header{
-	margin-top: 160px;
+	margin-top: 220px;
 	margin-bottom: 40px;
 }
 
@@ -44,21 +45,23 @@ font-family: 'Open Sans', sans-serif;
 color: #fff;
 text-align: center;
 font-size: 50px;
+line-height: 1;
 font-weight: 300;
-margin: 0 0 10px 0;
+margin: 20px 0 20px 0;
 }
 
 
 h1 strong{
 font-size: 38px;
 font-weight: 700;
+color: #42b983;
 }
 
 h2{
 	text-align: center;
 	font-weight: 300;
 	font-size: 20px;
-		color: #ffffff;
+	color: #2c3e50;
 
 }
 
@@ -88,59 +91,41 @@ display: block;
 
 .form{
 position: relative;
-width: 478px;
-margin-top: 20px;
+width: 100%;
+max-width: 448px;
+margin: 0 auto 0 auto;
 }
 
 .field{
-background: url(../images/field.png) repeat;
-width: 448px;
+border: 1px solid #ccc;
+width: 100%;
 -webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;
-border: none;
-font-style: italic;
 font-family: 'Lato', sans-serif;
 font-size: 16px;
-color: #ffffff;
 padding: 15px;
 margin-bottom: 15px;
 outline: none;
+box-sizing: border-box;
 }
-	.field:focus {
-	border: 1px solid #ffffff;
-	padding: 14px;
-	}
 @media only screen and (max-width: 480px)  {
 	.information{
 	width: 100%;
-	}
-	.form{
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
-	}
-
-	.field {
-	width: 90%;
 	}
 }
 
 .submit{
 position: absolute;
-right: 15px;
-top: 13px;
-padding: 3px 10px;
+right: 6px;
+top: 6px;
+padding: 8px 24px;
 -webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;
-background: #ffffff;
+background: #42b983;
+color: #fff;
 border: none;
 font-family: 'Lato', sans-serif;
-font-size: 14px;
+font-size: 18px;
 font-weight: bold;
 cursor: pointer;
-}
-
-
-.submit:hover{
-background: #eeeeee;
 }
 
 .error {
